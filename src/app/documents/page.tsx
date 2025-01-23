@@ -19,7 +19,7 @@ const Documents = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Empty state */}
           <div className="col-span-full flex flex-col items-center justify-center p-12 text-center">
-            <FileText className="h-12 w-12 text-gray-400" />
+            <FileText className="h-12 w-12 text-purple-600" />
             <h3 className="mt-4 text-lg font-medium text-gray-900">
               No documents yet
             </h3>
@@ -27,7 +27,9 @@ const Documents = () => {
               Get started by creating a new document
             </p>
             <Link href="/create">
-              <Button className="mt-6">Create Document</Button>
+              <Button className="mt-6" variant={"secondary"}>
+                Create Document
+              </Button>
             </Link>
           </div>
         </div>

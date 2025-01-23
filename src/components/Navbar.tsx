@@ -32,8 +32,8 @@ export const Navbar = () => {
             </Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="outline">Sign In</Button>
-            <Button>Get Started</Button>
+            <Button variant={"default"}>Sign In</Button>
+            <Button variant={"secondary"}>Get Started</Button>
           </div>
         </div>
       </div>

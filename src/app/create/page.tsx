@@ -1,9 +1,12 @@
+"use client";
+
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Upload, AlertCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import Link from "next/link";
 const CreateDocument = () => {
   const [isDragging, setIsDragging] = useState(false);
   const { toast } = useToast();
@@ -52,8 +55,7 @@ const CreateDocument = () => {
     });
   };
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Navbar />
+    <div className="min-h-screen flex items-center bg-gray-50">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold text-gray-900 text-center mb-8">
@@ -98,13 +100,12 @@ const CreateDocument = () => {
                 variant="link"
                 className="text-primary hover:text-primary-hover"
               >
-                Upgrade to Pro
+                <Link href={"/pricing"}>Upgrade to Pro</Link>
               </Button>
             </p>
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

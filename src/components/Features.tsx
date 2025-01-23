@@ -39,11 +39,11 @@ export const Features = () => {
         </div>
         <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (
-            <div key={feature.name} className="relative group">
+            <div key={feature.name} className="relative group cursor-pointer">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-primary-dark rounded-lg blur opacity-0 group-hover:opacity-10 transition duration-200"></div>
-              <div className="relative p-6 bg-white border border-gray-200 rounded-lg hover:border-primary/50 transition-colors">
+              <div className="relative p-6 bg-white border border-purple-200 rounded-lg hover:border-purple-600 transition-colors">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-primary" />
+                  <feature.icon className="w-6 h-6 text-purple-600" />
                 </div>
                 <h3 className="mt-4 text-lg font-medium text-gray-900">
                   {feature.name}

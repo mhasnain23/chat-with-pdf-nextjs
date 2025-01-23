@@ -81,8 +81,11 @@ export const Pricing = () => {
                 ))}
               </ul>
               <Button
-                variant={tier.name === "Pro" ? "default" : "outline"}
-                className="w-full"
+                disabled={tier.name === "Free"}
+                variant={tier.name === "Free" ? "default" : "secondary"}
+                className={`w-full ${
+                  tier.name === "Free" ? "disabled:opacity-65 border-none" : ""
+                }`}
               >
                 {tier.name === "Enterprise" ? "Contact Sales" : "Get Started"}
               </Button>
