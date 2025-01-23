@@ -1,36 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to Chat With PDF
 
-## Getting Started
+- we arrive with this new market solution a lot of business struggle to read large docs like pdf. where user upload pdf and AI will summarize it
 
-First, run the development server:
+- reate a SAAS landing page of "char-with-pdf" use purple and white and black colors and also gray color themed use shadcn for reusable components and created a pricing section showup available features and what we offer in free plan created three plan free, pro, enterprise also create a my document page and created new documents page in navbar
+- Total section you have to work on hero, navbar, features, solution, review, footer
+- Navbar should has four routes like home, my documents, create document
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- summary I am building a SAAS AI where users chat with pdf like my ai summarize long document if document is greater than 5mb we show warning please purchase subscription under $5 so build this
