@@ -29,7 +29,6 @@ export default function RootLayout({
     <ClerkProvider dynamic>
       <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
-          <Navbar />
           {children}
           <Footer />
         </body>

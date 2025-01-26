@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { SignedIn } from "@clerk/nextjs";
+import { FilePlus2 } from "lucide-react";
 import Link from "next/link";
 export const Navbar = () => {
   return (
@@ -11,30 +13,33 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              href="/documents"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              My Documents
-            </Link>
-            <Link
-              href="/create"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              Create Document
-            </Link>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Button variant={"default"}>Sign In</Button>
-            <Button variant={"secondary"}>Get Started</Button>
-          </div>
+          <SignedIn>
+            <div className="hidden md:flex items-center space-x-2">
+              <Button
+                variant="ghost"
+                asChild
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                <Link href="/">Pricing</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                <Link href="/dashboard">My Documents</Link>
+              </Button>
+              <Button
+                asChild
+                variant="ghost"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                <Link href="/upload">
+                  <FilePlus2 className="text-purple-600" />
+                </Link>
+              </Button>
+            </div>
+          </SignedIn>
         </div>
       </div>
     </nav>

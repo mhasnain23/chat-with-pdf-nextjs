@@ -17,6 +17,7 @@ const CreateDocument = () => {
   const handleDragLeave = () => {
     setIsDragging(false);
   };
+
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);

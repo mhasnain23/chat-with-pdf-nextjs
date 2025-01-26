@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 export const Hero = () => {
   return (
     <div className="relative pt-20 pb-16 sm:pt-24 sm:pb-20 md:pt-32 md:pb-24">
@@ -14,12 +15,12 @@ export const Hero = () => {
             instantly.
           </p>
           <div className="mt-10 flex justify-center gap-x-6">
-            <Button size="lg" variant={"secondary"}>
-              Try for Free
+            <Button asChild size="lg" variant={"secondary"}>
+              <Link href={"/dashboard"}>Get Started</Link>
             </Button>
-            <Button variant={"default"} size="lg">
+            {/* <Button variant={"default"} size="lg">
               See How it Works
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
