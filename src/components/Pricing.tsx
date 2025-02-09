@@ -14,7 +14,7 @@ const tiers = [
   },
   {
     name: "Pro",
-    price: "$5",
+    price: "$7",
     description: "For professionals and small teams",
     features: [
       "Up to 25MB PDF files",
@@ -40,11 +40,11 @@ const tiers = [
 ];
 export const Pricing = () => {
   return (
-    <div className="py-24 bg-gray-50">
+    <div className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            Simple, transparent pricing
+          <h2 className="text-3xl font-bold mt-5 text-gray-900 sm:text-4xl">
+          Simple and Affordable Pricing
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             Choose the perfect plan for your needs

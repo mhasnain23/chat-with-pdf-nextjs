@@ -1,10 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { SignedIn } from "@clerk/nextjs";
+import { SignedIn, useUser } from "@clerk/nextjs";
 import { FilePlus2 } from "lucide-react";
 import Link from "next/link";
-export const Navbar = () => {
+export const Navbar =() => {
+
+
   return (
     <div className="flex justify-between bg-white shadow-sm p-5 border-b">
       <div className="flex items-center">

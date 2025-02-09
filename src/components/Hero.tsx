@@ -6,8 +6,8 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-purple-600 sm:text-5xl md:text-6xl">
-            <span className="block">Chat with your PDFs using</span>
-            <span className="block text-primary">Advanced AI Summarizer</span>
+            <span className="block">Instantly transform long PDFs</span>
+            <span className="block text-primary">into clear, concise insights!</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600">
             Transform the way you read documents. Our AI-powered solution helps
